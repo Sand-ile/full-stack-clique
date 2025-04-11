@@ -1,7 +1,8 @@
 import './searchpage.css'
+import Gallery from '../../components/gallery/gallery'
 
 const SearchPage = () => {
-  return <div className='searchpage'>SearchPage</div>
+  return <Gallery />
 }
 
 export default SearchPage

@@ -1,4 +1,5 @@
 import './galleryItem.css'
+import { Link } from 'react-router'
 
 const galleryItem = ({ item }) => {
   return (
@@ -9,6 +10,17 @@ const galleryItem = ({ item }) => {
       }}
     >
       <img src={item.media} alt='' />
+      <Link to={`/pin/${item.id}`} className='overlay' />
+      <button className='saveButton'>Save</button>
+      {/* overLay & Icons */}
+      <div className='overlayIcons'>
+        <button>
+          <img src='/general/share.svg' alt='' />
+        </button>
+        <button>
+          <img src='general/more.svg' alt='' />
+        </button>
+      </div>
     </div>
   )
 }
