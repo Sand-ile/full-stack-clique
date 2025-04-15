@@ -15,10 +15,9 @@
  gap: 16px;
 }
 
-.seach input{
+.search input{
  flex: 1;
  background-color: transparent;
- border: none;
  outline: none;
  font-size: 18px;
 }
