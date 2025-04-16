@@ -1,40 +1,41 @@
 import Image from '../image/Image'
 import './leftBar.css'
+import { Link } from 'react-router'
 
 const leftBar = () => {
   return (
     <div className='leftBar'>
       <div className='menuIcons'>
         {/* single item */}
-        <a href='/' className='menuIcon'>
+        <Link to='/' className='menuIcon'>
           <Image path='/general/logo.png' alt='' className='logo' />
-        </a>
+        </Link>
         {/* end of single item */}
         {/* single item */}
-        <a href='' className='menuIcon'>
+        <Link to='/' className='menuIcon'>
           <Image path='/general/home.svg' alt='' />
-        </a>
+        </Link>
         {/* end of single item */}
         {/* single item */}
-        <a href='' className='menuIcon'>
+        <Link to='/create' className='menuIcon'>
           <Image path='/general/create.svg' alt='' />
-        </a>
+        </Link>
         {/* end of single item */}
         {/* single item */}
-        <a href='' className='menuIcon'>
+        <Link to='/' className='menuIcon'>
           <Image path='/general/updates.svg' alt='' />
-        </a>
+        </Link>
         {/* end of single item */}
         {/* single item */}
-        <a href='' className='menuIcon'>
+        <Link to='/' className='menuIcon'>
           <Image path='/general/messages.svg' alt='' />
-        </a>
+        </Link>
         {/* end of single item */}
       </div>
       {/* single item */}
-      <a href='' className='menuIcon'>
-        <Image path='/general/settings.svg' alt='' />
-      </a>
+      <Link to='/' className='menuIcon'>
+        <img src='/general/settings.svg' alt='' />
+      </Link>
       {/* end of single item */}
     </div>
   )
